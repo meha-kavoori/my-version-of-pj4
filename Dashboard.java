@@ -72,20 +72,23 @@ public class Dashboard {
                 break;
             }
             case 6: {
-                 System.out.println("Would you like to sort the Statistics?");
-                System.out.println("1. Yes%n2. No");
+                System.out.println("Would you like to sort the Statistics?");
+                System.out.println("1. Yes\n2. No");
                 int sortStats = scanner.nextInt();
-                scanner.nextLine();
-                
+                //scanner.nextLine();
+
                 // ADD STORE STATS IMPLEMENTATION
+                //seller = (Seller) user;
                 Store store = new Store(seller, seller.getStoreName());
-                
+
                 scanner.nextLine();
                 if (sortStats == 1) {
                     store.printSellerDashboardSorted(seller);
                 } else if (sortStats == 2) {
                     store.printSellerDashboard(seller);
                 }
+
+
                 // end of added
                 break;
             }
@@ -136,8 +139,9 @@ public class Dashboard {
                 System.out.println("1. Yes%n2. No");
                 int sortStats = scanner.nextInt();
                 scanner.nextLine();
-                
+
                 // newly added
+                /*
                 Seller seller = new Seller("","","","");
 
                 Store store = new Store(seller, seller.getStoreName());
@@ -147,6 +151,8 @@ public class Dashboard {
                     store.printCustomerDashboard(c);
                 }
                 // added finish
+
+                 */
                 break;
             }
             case 7: {
